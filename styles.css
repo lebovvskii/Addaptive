@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'GalanoGrotesque-Medium'; 
+  src: url('fonts/Galano.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+header {
+  max-width: 846px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: #f9f9fa;
+}
+
+h1 {
+  font-size: 12px;
+  text-align: center;
+  background-image: linear-gradient(to right,#4343FF, #F96D6D);
+  color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+h2 {
+  font-family: 'GalanoGrotesque-Medium', sans-serif;
+  font-size: 46px;
+  text-align: center;
+  color: #110c11;
+  line-height: 120%;
+  font-weight: 400;
+  padding-top: 22px;
+}
+
+.container {
+  display: grid;
+  grid-column-start: auto;
+  grid-template-columns: repeat(3, minmax(0, 387px));
+  grid-template-rows: repeat(3, minmax(0, 225px));
+  grid-auto-flow: row;
+  column-gap: 35px;
+  row-gap: 35px;
+  justify-content: center;
+}
+
+.cards {
+  background-color: #ffffff;
+  padding: 22px;
+}
+
+.card-title {
+  font-size: 17px;
+  color: #110c11;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.card-text {
+  font-size: 17px;
+  color: #5c5c5c;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 28px;
+}
+
